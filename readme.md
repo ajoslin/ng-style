@@ -47,28 +47,20 @@ export default ngStyles({
 })
 ```
 
-See [to-css](https://github.com/joakimbeng/to-css) for documentation on how to javascript styles in css.
-
 ## API
 
-#### `ngStyle(input, [options])` -> `output`
+#### `ngStyle(object)` -> `cssString`
 
-##### input
+##### object
 
 *Required*
-Type: `string`
+Type: `object`
 
-Lorem ipsum.
+An object representing css styles. Allows camelCase style keys.
 
-##### options
+See [to-css](https://github.com/joakimbeng/to-css) for documentation on how to javascript styles in css.
 
-###### foo
-
-Type: `boolean`
-Default: `false`
-
-Lorem ipsum.
-
+Returns a valid css string.
 
 ## License
 
