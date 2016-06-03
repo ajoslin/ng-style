@@ -1,7 +1,7 @@
 {
   "name": "ng-style",
   "main": "index.js",
-  "version": "0.0.0",
+  "version": "0.0.7",
   "description": "Write inline styles for Angular",
   "license": "MIT",
   "repository": "ajoslin/ng-style",
@@ -22,12 +22,14 @@
     "tape": "^4.0.0",
     "standard": "^7.0.0"
   },
+  "typings": "index.d.ts",
   "files": [
-    "index.js",
-    "test.js"
+    "*.ts",
+    "*.js"
   ],
   "dependencies": {
+    "css-key": "~1.0.0",
     "inline-style-prefix-all": "~2.0.2",
-    "style-css": "~1.0.2"
+    "to-css": "~1.2.1"
   }
 }
