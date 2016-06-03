@@ -2,6 +2,9 @@
 
 > Write inline styles for Angular
 
+Takes a style object, prefixes it, and converts it to a CSS string.
+
+Great for use with the angular inline `styles` array.
 
 ## Install
 
@@ -12,12 +15,39 @@ $ npm install --save ng-style
 
 ## Usage
 
-```js
-var ngStyle = require('ng-style')
+#### my-component.ts
 
-ngStyle('input')
-//=> output
+```ts
+import {Component} from '@angular/core'
+import styles from './styles'
+
+@Component({
+  selector: 'my-component',
+  template: '<h1>Hello!</h1>'
+  styles: [styles]
+})
+class MyComponent {}
 ```
+
+#### styles.ts
+
+```ts
+import ngStyles from 'ng-styles'
+import Color from 'color'
+
+export default ngStyles({
+  h1: {
+    fontSize: '20px',
+    color: 'black',
+    transition: 'color 250ms' // will be prefixed
+  },
+  'h1:hover': {
+    color: Color('red').alpha(0.5).rgbaString()
+  },
+})
+```
+
+See [to-css](https://github.com/joakimbeng/to-css) for documentation on how to javascript styles in css.
 
 ## API
 
@@ -25,7 +55,7 @@ ngStyle('input')
 
 ##### input
 
-*Required*  
+*Required*
 Type: `string`
 
 Lorem ipsum.
@@ -34,7 +64,7 @@ Lorem ipsum.
 
 ###### foo
 
-Type: `boolean`  
+Type: `boolean`
 Default: `false`
 
 Lorem ipsum.

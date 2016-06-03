@@ -25,5 +25,9 @@
   "files": [
     "index.js",
     "test.js"
-  ]
+  ],
+  "dependencies": {
+    "inline-style-prefix-all": "~2.0.2",
+    "style-css": "~1.0.2"
+  }
 }
