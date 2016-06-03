@@ -1,0 +1,29 @@
+{
+  "name": "ng-style",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Write inline styles for Angular",
+  "license": "MIT",
+  "repository": "ajoslin/ng-style",
+  "author": {
+    "name": "Andrew Joslin",
+    "email": "andrewtjoslin@gmail.com",
+    "url": "ajoslin.com"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "keywords": [
+    "angular",
+    "styles",
+    "javascript"
+  ],
+  "devDependencies": {
+    "tape": "^4.0.0",
+    "standard": "^7.0.0"
+  },
+  "files": [
+    "index.js",
+    "test.js"
+  ]
+}
