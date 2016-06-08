@@ -58,7 +58,7 @@ Type: `object`
 
 An object representing css styles. Allows camelCase style keys.
 
-See [to-css](https://github.com/joakimbeng/to-css) for documentation on how to javascript styles in css.
+See [to-css](https://github.com/joakimbeng/to-css) for documentation on how to write javascript styles.
 
 Returns a valid css string.
 
