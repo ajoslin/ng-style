@@ -32,7 +32,7 @@ class MyComponent {}
 #### styles.ts
 
 ```ts
-import ngStyles from 'ng-styles'
+import ngStyles from 'ng-style'
 import Color from 'color'
 
 export default ngStyles({
